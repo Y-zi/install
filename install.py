@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 
-url_prefix = 'http://fishros.com/install/install1s/'
+url_prefix = 'http://mirror.fishros.com/install/'
 
 base_url = url_prefix+'tools/base.py'
 
@@ -34,6 +34,7 @@ tools ={
     14: {'tip':'一键安装:科学上网代理工具','type':INSTALL_SOFTWARE,'tool':url_prefix+'tools/tool_install_proxy_tool.py' ,'dep':[8] },
     15: {'tip':'一键安装：QQ for Linux', 'type':INSTALL_SOFTWARE, 'tool': url_prefix+'tools/tool_install_qq.py', 'dep':[]},
     16: {'tip':'一键安装：系统自带ROS (！！警告！！仅供特殊情况下使用)', 'type':INSTALL_ROS, 'tool': url_prefix+'tools/tool_install_ros1_systemdefault.py', 'dep':[5]},
+    17: {'tip':'一键配置: Docker代理(支持VPN+代理服务两种模式)', 'type':CONFIG_TOOL, 'tool': url_prefix+'tools/tool_config_docker_proxy.py', 'dep':[]},
     # 77: {'tip':'测试模式:运行自定义工具测试'},
     }
 # 
@@ -79,7 +80,7 @@ def main():
                     __.'              ~.   .~              `.__
                 .'//     开卷有益        \./     书山有路     \\ `.
                 .'// 可以多看看小鱼的文章   |    关注公众号鱼香ROS  \\ `.
-            .'// .-~"""""""~~~~-._     |     _,-~~~~"""""""~-. \\`.
+            .'// .-~~~~~~~~~~~~~~-._     |     _,-~~~~~~~~~~~. \\`.
             .'//.-"                 `-.  |  .-'                 "-.\\`.
         .'//______.============-..   \ | /   ..-============.______\\`.
         .'______________________________\|/______________________________`
